@@ -4,16 +4,11 @@ function ScoreCounter(selector, l, begin){
     this.begin=begin;
 }
 
-
 var scoreCounter = new ScoreCounter(    
-    document.querySelector("counter"), 4, 0 )  ;
-    
-    var value = scoreCounter.value;
+    document.querySelector("counter"), 4, 0 ) 
 
+var val=scoreCounter.begin;
 
-scoreCounter.up(this,value);
-scoreCounter.down(this,value);
-scoreCounter.value(this,value);    
-scoreCounter.value(34);  
-scoreCounter.reset(this,begin);   
- 
+ScoreCounter.prototype.up = function(){
+alert("guwno");
+}
